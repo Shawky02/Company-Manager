@@ -1,0 +1,6 @@
+.vs/
+bin/
+obj/
+*.uder
+*.suo
+*.sln.ide

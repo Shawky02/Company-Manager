@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shawky\\Task\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\models\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:models\\departmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\entities\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:entities\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\entities\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:entities\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240924121058_initialcreate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240924121058_initialcreate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240926135258_initialcreate6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240926135258_initialcreate6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240926132138_initialcreate4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240926132138_initialcreate4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240926110156_initialcreate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240926110156_initialcreate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240926133213_initialcreate5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240926133213_initialcreate5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240929124754_initialcreate8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240929124754_initialcreate8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|d:\\shawky\\task\\webapplication1\\migrations\\20240929121257_initialcreate7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55D565B9-C4FF-4B78-949F-71CE2C5D8E98}|WebApplication1.csproj|solutionrelative:migrations\\20240929121257_initialcreate7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\EmployeeService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAYwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:23:10.361Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentModel.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Models\\DepartmentModel.cs",
+              "RelativeDocumentMoniker": "Models\\DepartmentModel.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Models\\DepartmentModel.cs",
+              "RelativeToolTip": "Models\\DepartmentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:37:31.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\IEmployeeService.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "Services\\IEmployeeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:21:16.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "Services\\DepartmentService.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "Services\\DepartmentService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:40:52.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Services\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "Services\\IDepartmentService.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Services\\IDepartmentService.cs",
+              "RelativeToolTip": "Services\\IDepartmentService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:35:02.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAgwHkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T10:22:06.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Entities\\MyContext.cs",
+              "RelativeDocumentMoniker": "Entities\\MyContext.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Entities\\MyContext.cs",
+              "RelativeToolTip": "Entities\\MyContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:06:01.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwCUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T12:30:39.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "Entities\\Department.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Entities\\Department.cs",
+              "RelativeToolTip": "Entities\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:00:42.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employees.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Entities\\Employees.cs",
+              "RelativeDocumentMoniker": "Entities\\Employees.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Entities\\Employees.cs",
+              "RelativeToolTip": "Entities\\Employees.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T12:52:57.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwCAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T10:13:52.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240929124754_InitialCreate8.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240929124754_InitialCreate8.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240929124754_InitialCreate8.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240929124754_InitialCreate8.cs",
+              "RelativeToolTip": "Migrations\\20240929124754_InitialCreate8.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T12:47:54.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240924121058_InitialCreate2.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240924121058_InitialCreate2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240924121058_InitialCreate2.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240924121058_InitialCreate2.cs",
+              "RelativeToolTip": "Migrations\\20240924121058_InitialCreate2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T12:10:59.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-26T10:55:59.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240929121257_InitialCreate7.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240929121257_InitialCreate7.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240929121257_InitialCreate7.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240929121257_InitialCreate7.cs",
+              "RelativeToolTip": "Migrations\\20240929121257_InitialCreate7.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T12:12:57.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240926110156_InitialCreate3.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926110156_InitialCreate3.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240926110156_InitialCreate3.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926110156_InitialCreate3.cs",
+              "RelativeToolTip": "Migrations\\20240926110156_InitialCreate3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:01:56.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240926132138_InitialCreate4.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926132138_InitialCreate4.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240926132138_InitialCreate4.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926132138_InitialCreate4.cs",
+              "RelativeToolTip": "Migrations\\20240926132138_InitialCreate4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T13:21:38.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240926135258_InitialCreate6.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926135258_InitialCreate6.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240926135258_InitialCreate6.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926135258_InitialCreate6.cs",
+              "RelativeToolTip": "Migrations\\20240926135258_InitialCreate6.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T13:52:58.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240926133213_InitialCreate5.cs",
+              "DocumentMoniker": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926133213_InitialCreate5.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240926133213_InitialCreate5.cs",
+              "ToolTip": "D:\\Shawky\\Task\\WebApplication1\\Migrations\\20240926133213_InitialCreate5.cs",
+              "RelativeToolTip": "Migrations\\20240926133213_InitialCreate5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T13:32:14.033Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
