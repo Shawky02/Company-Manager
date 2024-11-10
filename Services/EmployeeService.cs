@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.Repositories;
 namespace WebApplication1.Services
 {
     public class EmployeeService : IEmployeeService
@@ -13,13 +14,26 @@ namespace WebApplication1.Services
         private readonly UserManager<Employees> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<Employees> _signInManager;
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IFileService _fileService;
 
-        public EmployeeService(MyContext context, UserManager<Employees> userManager, RoleManager<IdentityRole> roleManager, SignInManager<Employees> signInManager)
+        public EmployeeService(MyContext context,
+            UserManager<Employees> userManager,
+            RoleManager<IdentityRole> roleManager,
+            SignInManager<Employees> signInManager,
+            IEmployeeRepository employeeRepository,
+            IFileService fileService)
         {
             _context = context;
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
+            _employeeRepository = employeeRepository;
+            _fileService = fileService;
+        }
+        public async Task<IEnumerable<Employees>> GetAllEmployeesAsync()
+        {
+            return await _employeeRepository.GetAllAsync();
         }
         public async Task<IdentityResult> RegisterEmployeeAsync(RegisterModel model)
         {
@@ -96,6 +110,42 @@ namespace WebApplication1.Services
         {
             await _signInManager.SignOutAsync();
         }
+        public async Task BulkCreateEmployeesAsync(IEnumerable<EmployeeModel> employeeModels)
+        {
+            var employees = employeeModels.Select(model => new Employees
+            {
+                UserName = model.Name,
+                DeptID = model.DeptID,
+            });
 
+            await _employeeRepository.BulkCreateEmployeesAsync(employees);
+        }
+
+        public async Task<IEnumerable<EmployeeModel>> GetPagedEmployeesAsync(int pageNumber, int pageSize)
+        {
+            var employees = await _employeeRepository.GetPagedEmployeesAsync(pageNumber, pageSize);
+
+            return employees.Select(employee => new EmployeeModel
+            {
+                Name = employee.UserName,
+                DeptID = employee.DeptID,
+            }).ToList();
+        }
+
+        public async Task SaveEmployeePhotoAsync(string employeeId, IFormFile photoFile)
+        {
+            var employee = await _employeeRepository.GetAsync(e => e.Id == employeeId);
+
+            if (employee == null)
+                throw new Exception("Employee not found.");
+
+            // Use the FileUploadService to save the photo file
+            var fileName = await _fileService.SaveFileAsync(photoFile, "uploads/employees");
+
+            // Update employee's PhotoFileName
+            employee.PhotoPath = fileName;
+
+            await _employeeRepository.UpdateAsync(employee);
+        }
     }
 }

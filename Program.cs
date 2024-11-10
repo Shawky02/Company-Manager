@@ -7,17 +7,27 @@ using Microsoft.AspNetCore.Identity;
 using WebApplication1.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using WebApplication1.Repositories;
+using WebApplication1.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = "Server=. ; Database= GUC";
+//var connectionString = "Server=. ; Database= GUC";
 builder.Services.AddDbContext<MyContext>(options => options.
 UseSqlServer(builder.Configuration.
 GetConnectionString("DefaultConnection"),sqlOptions => sqlOptions.EnableRetryOnFailure()));
+
 builder.Services.AddIdentity<Employees, IdentityRole>()
     .AddEntityFrameworkStores<MyContext>()
     .AddDefaultTokenProviders();
+
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IFileService, FileService>();
+
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 // Add services to the container
 //builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -85,6 +95,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseAuthorization();
 

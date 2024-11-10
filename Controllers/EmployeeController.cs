@@ -18,7 +18,10 @@ namespace WebApplication1.Controllers
         private readonly UserManager<Employees> _userManager;
         private readonly SignInManager<Employees> _signInManager;
 
-        public EmployeeController(IEmployeeService employeeService, MyContext context, UserManager<Employees> userManager, SignInManager<Employees> signInManager)
+        public EmployeeController(IEmployeeService employeeService,
+            MyContext context,
+            UserManager<Employees> userManager,
+            SignInManager<Employees> signInManager)
         {
             _employeeService = employeeService;
             _context = context;
@@ -26,7 +29,13 @@ namespace WebApplication1.Controllers
             _signInManager = signInManager;
         }
 
-        
+        [HttpGet]
+        public async Task<IActionResult> GetAllEmployees()
+        {
+            var employees = await _employeeService.GetAllEmployeesAsync();
+            return Ok(employees);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
@@ -77,7 +86,7 @@ namespace WebApplication1.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await _employeeService.LoginAsync(model); 
+            var result = await _employeeService.LoginAsync(model);
 
             if (result.Succeeded)
             {
@@ -136,7 +145,7 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public async Task<IActionResult> AssignEmployeeToDepartment(int departmentId, string employeeId)
         {
-            var result = await _employeeService.AssignEmployeeToDepartmentAsync(departmentId, employeeId); 
+            var result = await _employeeService.AssignEmployeeToDepartmentAsync(departmentId, employeeId);
 
             if (result.Succeeded)
             {
@@ -153,45 +162,100 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            await _employeeService.LogoutAsync();  
+            await _employeeService.LogoutAsync();
             return Ok(new { Message = "Logout successful!" });
         }
 
-        //[Authorize(Roles = "Manager")]  
-        //[HttpPost]
-        //public async Task<IActionResult> AssignEmployeeToDepartment(int DepartmentId, string ID)
-        //{
+        [Authorize(Roles = "Manager")]
+        [HttpPost]
+        public async Task<IActionResult> BulkCreateEmployees([FromBody] List<EmployeeModel> employeeModels)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-        //    //var currentUser = await _userManager.GetUserAsync(User);
+            //try
+            //{
+                await _employeeService.BulkCreateEmployeesAsync(employeeModels);
+                return Ok(new { message = "Employees created successfully." });
+            //}
+            //catch (Exception ex)
+            //{
+            //    return StatusCode(500, new { message = ex.Message });
+            //}
 
+            //[Authorize(Roles = "Manager")]  
+            //[HttpPost]
+            //public async Task<IActionResult> AssignEmployeeToDepartment(int DepartmentId, string ID)
+            //{
 
-        //    //var isManager = await _userManager.IsInRoleAsync(currentUser, "Manager");
-        //    //if (!isManager)
-        //    //{
-        //    //    return Forbid();
-        //    //}
-
-
-        //    var user = await _userManager.FindByIdAsync(ID);
-        //    if (user == null)
-        //    {
-        //        return NotFound(new { Message = "Employee not found" });
-        //    }
-
-
-        //    var department = await _context.Departments.FindAsync(DepartmentId);
-        //    if (department == null)
-        //    {
-        //        return BadRequest(new { Message = "The specified department does not exist" });
-        //    }
-
-        //    user.DeptID = DepartmentId;
-        //    _context.Employees.Update(user);
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(new { Message = $"Employee {user.UserName} assigned to department {department.Name} successfully" });
-        //}
+            //    //var currentUser = await _userManager.GetUserAsync(User);
 
 
+            //    //var isManager = await _userManager.IsInRoleAsync(currentUser, "Manager");
+            //    //if (!isManager)
+            //    //{
+            //    //    return Forbid();
+            //    //}
+
+
+            //    var user = await _userManager.FindByIdAsync(ID);
+            //    if (user == null)
+            //    {
+            //        return NotFound(new { Message = "Employee not found" });
+            //    }
+
+
+            //    var department = await _context.Departments.FindAsync(DepartmentId);
+            //    if (department == null)
+            //    {
+            //        return BadRequest(new { Message = "The specified department does not exist" });
+            //    }
+
+            //    user.DeptID = DepartmentId;
+            //    _context.Employees.Update(user);
+            //    await _context.SaveChangesAsync();
+
+            //    return Ok(new { Message = $"Employee {user.UserName} assigned to department {department.Name} successfully" });
+            //}
+
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPagedEmployees(int pageNumber = 1, int pageSize = 2)
+        {
+            //try
+            //{
+                var employees = await _employeeService.GetPagedEmployeesAsync(pageNumber, pageSize);
+                return Ok(employees);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return StatusCode(500, new { message = ex.Message });
+            //}
+        }
+
+        [Authorize]
+        [HttpPost]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadPhoto([FromForm] PhotoModel model)
+        {
+            if (model.PhotoFile == null || model.PhotoFile.Length == 0)
+            {
+                return BadRequest("Invalid photo file.");
+            }
+
+            //try
+            //{
+                await _employeeService.SaveEmployeePhotoAsync(model.Id, model.PhotoFile);
+                return Ok(new { message = "Photo uploaded successfully." });
+            //}
+            //catch (Exception ex)
+            //{
+            //    return StatusCode(500, new { message = ex.Message });
+            //}
+        }
     }
 }

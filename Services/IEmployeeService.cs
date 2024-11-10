@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using WebApplication1.Entities;
 using WebApplication1.Models;
 
 namespace WebApplication1.Services
@@ -10,5 +11,9 @@ namespace WebApplication1.Services
         Task<IdentityResult> AssignRoleAsync(RoleAssignmentModel model);
         Task<IdentityResult> AssignEmployeeToDepartmentAsync(int departmentId, string employeeId);
         Task LogoutAsync();
+        Task<IEnumerable<Employees>> GetAllEmployeesAsync();
+        Task BulkCreateEmployeesAsync(IEnumerable<EmployeeModel> employeeModels);
+        Task<IEnumerable<EmployeeModel>> GetPagedEmployeesAsync(int pageNumber, int pageSize);
+        Task SaveEmployeePhotoAsync(string employeeId, IFormFile photoFile);
     }
 }

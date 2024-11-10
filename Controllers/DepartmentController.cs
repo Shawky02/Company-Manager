@@ -7,9 +7,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Services;
 
-
-
-
 namespace WebApplication1.Controllers
 {
     [ApiController]
@@ -22,13 +19,38 @@ namespace WebApplication1.Controllers
             _departmentService = departmentService;
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
-        public async Task<IActionResult> GetAllDepartments()
+        public async Task<IActionResult> GetAll()
         {
             var departments = await _departmentService.GetAllDepartmentsAsync();
             return Ok(departments);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetById(int Id)
+        {
+            var department = await _departmentService.GetDepartmentByIdAsync(Id);
+            return Ok(department);
+        }
+
+        //[HttpGet]
+        //public async Task<IActionResult> CheckDepartmentExists(string departmentName)
+        //{
+        //    if (await _departmentService.DepartmentExistsAsync(departmentName))
+        //    {
+        //        return Ok("Department exists.");
+        //    }
+        //    return NotFound("Department not found.");
+        //}
+
+        //[Authorize]
+        //[HttpGet]
+        //public async Task<IActionResult> GetAllDepartments()
+        //{
+        //    var departments = await _departmentService.GetAllDepartmentsAsync();
+        //    return Ok(departments);
+        //}
 
         [Authorize(Roles = "Manager")]
         [HttpPost]
@@ -39,15 +61,15 @@ namespace WebApplication1.Controllers
                 return BadRequest(ModelState);
             }
 
-            try
-            {
+            //try
+            //{
                 var department = await _departmentService.CreateDepartmentAsync(model);
                 return Ok(department);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+            //}
+            //catch (InvalidOperationException ex)
+            //{
+            //    return BadRequest(new { message = ex.Message });
+            //}
         }
 
         [Authorize]
@@ -63,9 +85,23 @@ namespace WebApplication1.Controllers
 
             return Ok(employees);  
         }
+
+        [Authorize(Roles = "Manager")]
+        [HttpDelete]
+        public async Task<IActionResult> DeleteDepartmentById(int departmentId)
+        {
+            //try
+            //{
+                await _departmentService.DeleteDepartmentByIdAsync(departmentId);
+                return Ok($"Department '{departmentId}' has been deleted.");
+            ////}
+            ////catch (Exception ex)
+            //{
+            //    return NotFound(Message);
+            //}
+        }
     }
 }
-
 
  //[HttpPost]
         //[Authorize(Roles = "Manager")]

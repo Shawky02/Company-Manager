@@ -7,7 +7,8 @@ namespace WebApplication1.Entities
     public class Employees:IdentityUser
     {
         public int Salary { get; set; }
-        
+        public string PhotoPath { get; set; }
+
         public int? DeptID { get; set; }
 
         [ForeignKey(nameof(DeptID))]
