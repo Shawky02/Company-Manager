@@ -9,6 +9,7 @@ using WebApplication1.Repositories;
 using WebApplication1.Middleware;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.JwtSettings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,8 @@ builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
 
 
 // Register Repositories
@@ -35,8 +38,8 @@ builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 
-int targetLength = 32;
-var key = Encoding.ASCII.GetBytes("Lk9*GhB3@qWd5zUvXyNp1$TkMb7RsPq4");
+var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
+var key = Encoding.ASCII.GetBytes(jwtSettings.key);
 
 
 // Authentication Configuration
