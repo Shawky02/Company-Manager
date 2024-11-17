@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using System.Diagnostics;
 using WebApplication1.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]/[Action]")]
     public class EmployeeController : ControllerBase
